@@ -34,13 +34,13 @@ public class ResumeController {
     }
 
     @QueryMapping
-    public Resume getResumeById(@Argument Integer id) {
+    public Resume resumeById(@Argument Integer id) {
         log.info("query for id: {}", id);
         return service.getResumeById(id).get(0);
     }
 
     @QueryMapping
-    public List<Resume> getResumeByName(@Argument String name) {
+    public List<Resume> resumeByName(@Argument String name) {
         log.info("query resume with name : {}", name);
         return service.getResumeByName(name);
     }
