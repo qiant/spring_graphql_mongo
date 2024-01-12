@@ -1,0 +1,20 @@
+type Resume {
+    id : Int
+    name : String
+    firstName : String
+    lastName : String
+    title : String
+    jobDescription : String
+    company : String
+}
+
+type Query {
+   resumeById(id: Int): Resume
+   resumeByName(name: String): [Resume]
+}
+
+type Mutation {
+   uploadResume(id: Int, name : String, firstName: String, lastName : String, title : String, jobDescription: String, company : String) : Resume
+}
+
+

@@ -34,3 +34,7 @@ After setting up MongoDB, run Maven commands to install dependencies
     $ mvn clean install
    ```
 
+Start the application using Maven
+   ```
+    $ mvn spring-boot:run
+   ```
