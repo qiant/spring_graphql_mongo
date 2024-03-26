@@ -24,10 +24,10 @@ public class ResumeController {
 
 
     @MutationMapping
-    public Integer uploadResume(@Argument Integer id, @Argument String name, @Argument String firstName, @Argument String lastName,
+    public Resume uploadResume(@Argument Integer id, @Argument String name, @Argument String firstName, @Argument String lastName,
                              @Argument String title, @Argument String jobDescription, @Argument String company) {
         try {
-            return service.uploadResume(new Resume(id, name, firstName,lastName, title, jobDescription, company));
+            return service.uploadResume(new Resume(id, name, firstName, lastName, title, jobDescription, company));
         } catch (Exception e) {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST, e.getMessage());
         }
