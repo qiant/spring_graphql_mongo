@@ -38,3 +38,6 @@ Start the application using Maven
    ```
     $ mvn spring-boot:run
    ```
+
+5. Test graphQL on local develop environment after the app is running
+   http://localhost:8080/graphiql?path=/graphql
